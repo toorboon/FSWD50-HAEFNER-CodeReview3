@@ -1,0 +1,15 @@
+var team_members = [
+	{
+	"name":"Undertaker", 
+	"email":"undertaker@cars.com",
+	"image":"css/img/boudewijn-huysmans-724797-unsplash.jpg"
+	},{
+	"name":"Widow-Maker",
+	"email":"widow-maker@cars.com",
+	"image":"css/img/jose-francisco-morales-605844-unsplash.jpg"
+	},{
+	"name":"Horst", 
+	"email":"horst@cars.com",
+	"image":"css/img/tom-roberts-427704-unsplash.jpg"
+	}
+];

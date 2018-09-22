@@ -1,0 +1,273 @@
+//CSS for index.html
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed')
+
+@import 'team'
+
+$color_grey: #CECECE
+$background_color_brown: #FFF3F3
+$background_color_black: #171717
+$color_navbar: #8E1616
+$color_text_white: #F8F8F8
+$color_text_black: #2F2F2F
+$color_grey_border: #767676
+$color_ligther_grey: #E9E9E9
+$color_green: rgba(51, 146, 53, 1)
+$color_blue: #8DD1D3
+$color_text_blue: #6a81af
+$font_site: 'Asap Condensed', sans-serif
+
+body
+	font-family: $font_site
+	font-size: 1.5vw
+	margin: 0
+	display: flex
+	flex-direction: column
+	min-width: 400px
+
+*
+	transition: 0.5s
+	font-size: 1.5vw
+
+.body_wrapper
+	flex: 1
+
+/*That's where the header got styled*/
+.header_top
+	background-color: $background_color_brown
+	width: 100% 
+	height: auto
+	display: flex
+	flex-wrap: nowrap
+	flex-shrink: 1
+	justify-content: space-around
+
+.header_top a
+	margin: auto
+	padding: 0	
+	vertical-align: middle
+
+.header_top img
+	max-width: 100%
+	min-width: 0
+	height: auto
+	padding: 1.5vw
+	display: block
+
+/*part for the navbar styling*/
+nav
+	width: 100%
+
+@mixin navbar
+	list-style-type: none
+	margin: 0
+	padding: 0
+	overflow: hidden
+
+.nav_top ul
+	@include navbar
+	background-color: $color_navbar
+
+.nav_bottom ul
+	@include navbar
+	background-color: $background_color_black
+
+nav ul li
+	float: left
+
+nav li a
+	display: block
+	color: $color_text_white
+	text-align: center
+	padding: 1vw 1.1vw
+	text-decoration: none
+	font-size: 2vmin
+	
+nav li a:hover
+	background-color: $color_grey
+	color: $background_color_black
+
+//main box styling
+main
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	position: relative
+
+.flex_row1 img
+	width: 100%
+	height: 100%
+	object-fit: cover
+	display: block
+
+.flex_row1 div
+	position: absolute
+	top: 4vh
+	left: 2vw
+	color: $color_text_white
+
+.flex_row2
+	background-color: $color_grey
+	color: $color_text_black
+	text-align: center
+	padding: 4vw 0 4vw 0
+
+.flex_row2 p
+	width: 40vw
+	margin: auto
+	font-size: 2vmin
+
+h2
+	font-size: 4vmin
+	margin: 1vw
+	text-align: center
+
+.flex_row3
+	display: flex
+	flex-wrap: nowrap
+
+@mixin opacity_container_content
+	left: 0
+	right: 0
+	margin-left: auto
+	margin-right: auto
+
+.div_opacity
+	@include opacity_container_content
+	width: 80vw
+	height: auto
+	position: absolute
+	background-color: $color_text_white
+	top: 10vh
+	background: rgba(255, 255, 255, 0.8)
+	border: 1.5px solid $color_grey_border
+
+//here the styling for the entry form happens
+.table
+	display: table
+	@include opacity_container_content
+	border-collapse: separate
+	border-spacing: 11vw 2vh
+	columns: 2
+
+.table-row, 
+	display: table-row
+	
+.table-cell, .table-cell-centered
+	display: table-cell
+	padding: 0.5vw
+
+input
+	width: 20vw
+	background-color: white
+
+select
+	width: 21.5vw
+	background-color: white
+	
+.button_container
+	width: 100%
+
+button
+	display: block
+	margin-left: auto
+	margin-right: auto
+	padding: 2px 5px
+	background: rgba(51, 146, 53, 1)
+	font-weight: bold
+	color: $color_text_white
+	width: 20vw
+	height: auto
+	font-size: 2vw
+	border-radius: 1vw
+	border: none
+
+button:hover
+	cursor: pointer
+
+#result
+	margin: 2vw
+	text-align: center
+	@include opacity_container_content
+	width: 50vw
+	height: auto
+	font-size: 4vw
+	color: $color_green
+
+//styling for flex_row2	
+.flex_row2 p
+	width: 46vw
+
+.flex_row2 h2
+	font-weight: normal
+
+//styling for flex_row3
+.flex_row3
+	display: flex
+	flex-wrap: nowrap
+	width: 100%
+	justify-content: space-around
+
+.flex_box	
+	height: auto
+	width: 30vw
+	margin-top: 5vh
+	margin-bottom: 5vh
+	padding: 3vw
+	box-shadow: 0 -0.2vw 0 $background_color_black, -0.4vw 0.3vh 0.1vw $color_ligther_grey , 0.4vw 0.3vh 0.1vw $color_ligther_grey
+
+.flex_row3 h4
+	margin: 0
+	font-size: 2.3vw
+	font-weight: normal
+	color: $color_text_blue
+	font-weight: normal
+
+.flex_row3 h5
+	margin: 0
+	font-size: 1.5vw
+	font-weight: normal
+
+.flex_row3 h6
+	margin: 0
+	font-weight: bold
+
+.flex_row3 ul
+	list-style: none
+	margin-left: 0
+	padding-left: 1em
+	text-indent: -1em
+
+.flex_row3 ul li
+	padding: 1vw
+
+.flex_row3 ul li:before
+	content: '✓'
+	color: $color_blue
+	font-weight: bold
+	padding-right: 0.5em
+
+.bottom_p
+	margin: 0
+	
+//here the footer gets styled	
+footer
+	width: 100%
+	height: auto
+	font-size: 1.2vw
+	background-color: $background_color_black
+	color: $color_text_white
+	display: flex
+	flex-direction: column
+
+footer a
+	align-self: flex-end
+
+footer img
+	width: 18vw
+	max-width: 100%
+	min-width: 0
+	height: auto
+	padding: 1vw
+
+footer h3
+	align-self: center

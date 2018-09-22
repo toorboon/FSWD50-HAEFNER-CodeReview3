@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Car Insurance at it's best!</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="body_wrapper">
+		<header class="header_top">
+			<a href="index.html" title="Back to index.html">
+				<img class="img_left" src="css/img/logo.png" alt="Sorry, your browser cannot show this picture">
+			</a>
+			<a href="https://www.codefactory.wien" title="to codefactory.wien">
+				<img class="img_right" id="hide_header_pic" src="css/img/banner.png" alt="Sorry, your browser cannot show this picture">
+			</a>
+		</header>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="#" title="Back to where you started">Home</a></li>
+				<li><a href="team.html" title="Our marvelous team!">Team</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<div class="flex_row1">
+				<img src="css/img/traffic-332857_1920.jpg" alt="Sorry, your browser cannot show this picture">
+				<div>
+					<h2 class="absolute_h2">Car insurance</h2>
+				</div>
+			</div>
+			<div class="flex_row2">
+				<h2>Un-complicating car coverage</h2>
+				<p>Understanding your coverage options shouldn't be so hard. We'll guide you through available coverage types, starting with who and what is covered.</p>
+			</div>
+			<div class="flex_row3">
+				<div class="flex_box">
+					<h4>What comes standard</h4>
+					<h5>The coverage you needs</h5>
+					<ul>
+						<li>Bodily Injury Liability</li>
+						<li>Property Damage</li>
+						<li>Medical Payments</li>
+					</ul>
+					<h6>Benefits</h6>
+					<p class="bottom_p">12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+				</div>
+				<div class="flex_box">
+					<h4>Add-on protection & coverage</h4>
+					<h5>For more peace of mind</h5>
+					<ul>
+						<li>Better Car Replacement</li>
+						<li>Towing & Labor</li>
+						<li>Rental Car Coverage</li>
+					</ul>
+					<h6>Earned Benefits</h6>
+					<p class="bottom_p">Accident Forgiveness¹ | New Car <br>Replacement&#8482;</p>
+				</div>
+			</div>
+			<div class="div_opacity">
+				<h2>Great coverage, begins<br> with a custom quote!</h2>
+				<form class="table">
+
+					<div class="table-row">
+						<div class="table-cell">
+							Your name:<br><input class="table-cell enter_button" type="text" name="name" autofocus>
+						</div>
+						<div class="table-cell">
+							Age:<br><input class="table-cell enter_button" type="text" name="age" >
+						</div>
+					</div>	
+					
+					<div class="table-row">
+						<div class="table-cell">
+							Country:<br><select id="select_element" class="table-cell enter_button" name="country" size="1" required >
+										<option value="austria" checked>Austria</option>
+										<option value="hungary">Hungary</option>
+										<option value="russia">Russia</option>
+										</select>
+						</div>
+						<div class="table-cell">
+							Horsepower of your car:<br><input class="table-cell enter_button" type="text" name="horse_power">
+						</div>
+					</div>
+
+				</form>
+				<div class="button_container">
+					<button id="button_calculate" type="input" value="calculate">Calculate</button>
+				</div>
+				<p id="result"></p>
+			</div>
+		</main>
+		<footer>
+			<nav class="nav_bottom">
+				<ul>
+					<li><a href="#" title="Back to where you started">Home</a></li>
+					<li><a href="team.html" title="Our marvelous team!">Team</a></li>
+				</ul>
+			</nav>
+			<a href="index.html" title="Back to index.html">
+				<img class="img_footer" src="css/img/logo-inv.png" alt="">
+			</a>
+			<h3>Marco Häfner - CodeFactory 2018</h3>
+		</footer>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+<!--What to do:
+	(10) Add Jasmine to your project. Add tests to your script and test for various inputs of horse_power, age, country (3 or more different tests)
